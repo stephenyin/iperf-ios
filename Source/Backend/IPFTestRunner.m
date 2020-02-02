@@ -94,6 +94,7 @@ static void vc_reporter_callback(struct iperf_test *test)
   } else {
     iperf_set_test_role(test, 'c');
     iperf_set_test_num_streams(test, (int)configuration.streams);
+    set_protocol(test, Pudp); // test default udp protocol
 
     if (configuration.type == IPFTestRunnerConfigurationTypeDownload) {
       iperf_set_test_reverse(test, 1);

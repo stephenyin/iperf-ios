@@ -7,11 +7,14 @@
 @property (strong, nonatomic) IBOutlet UISegmentedControl *transmitModeSlider;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *streamsSlider;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *testDurationSlider;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *serverClientSlider;
 @property (strong, nonatomic) IBOutlet UILabel *bandwidthLabel;
 @property (strong, nonatomic) IBOutlet UILabel *averageBandwidthLabel;
 @property (strong, nonatomic) IBOutlet UIProgressView *progressView;
 
 - (IBAction)showHelp;
 - (IBAction)startStopTest;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *addTextFieldHeight;
+
 
 @end

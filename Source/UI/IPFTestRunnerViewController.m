@@ -227,4 +227,13 @@ static int getTestDuration(NSUInteger selectedSegmentIndex)
   self.progressView.hidden = YES;
 }
 
+- (IBAction)onServerClientSelected:(id)sender {
+  NSLog(@"onServerClientSelected %ld", [self.serverClientSlider selectedSegmentIndex]);
+  if ([self.serverClientSlider selectedSegmentIndex] == 0) {
+    self.addTextFieldHeight.constant = 0;
+  } else {
+    self.addTextFieldHeight.constant = 31;
+  }
+}
+
 @end
